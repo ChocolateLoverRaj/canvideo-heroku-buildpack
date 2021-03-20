@@ -23,3 +23,4 @@
   
   echo "Changing packed tgz location"
   sed -i "s/\"gui\": \"file:..\/common\"/\"gui\": \"file:.\/gui-1.0.0.tgz\"/" package.json
+  npm i
