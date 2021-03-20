@@ -19,7 +19,7 @@
   mv common/gui-1.0.0.tgz server/gui-1.0.0.tgz
   
   echo "Moving working directory to 'gui/server'
-  cd server
+  cd ./server
   
   echo "Installing packed tgz"
   npm i gui-1.0.0.tgz
