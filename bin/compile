@@ -11,6 +11,7 @@
   
   echo "Running npm pack"
   npm pack
+  cat gui-1.0.0.tgz
   
   echo "Moving working directory to 'gui'"
   cd ..
