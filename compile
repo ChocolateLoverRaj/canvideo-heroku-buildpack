@@ -1,0 +1,19 @@
+  #!/usr/bin/env bash
+  
+  echo "Moving working directory to 'gui/common'
+  cd gui/common
+  
+  echo "Running npm pack"
+  npm pack
+  
+  echo "Moving working directory to 'gui'"
+  cd ..
+  
+  echo "Moving packed tgz to 'gui/server' directory"
+  mv common/gui-1.0.0.tgz server/gui-1.0.0.tgz
+  
+  echo "Moving working directory to 'gui/server'
+  cd server
+  
+  echo "Installing packed tgz"
+  npm i gui-1.0.0.tgz
